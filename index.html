@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظم دعم القرار (MIS) - قيس الجازي</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+        :root {
+            --primary: #2c3e50;
+            --secondary: #2980b9;
+            --accent: #e67e22;
+            --text: #2c3e50;
+            --bg: #f5f6fa;
+            --note-bg: #fff3cd;
+            --note-border: #ffc107;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 4px solid var(--secondary);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 2.2em;
+            margin: 0;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        h2 {
+            background-color: var(--secondary);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-top: 50px;
+            font-size: 1.6em;
+        }
+
+        h3 {
+            color: var(--primary);
+            border-right: 5px solid var(--accent);
+            padding-right: 15px;
+            margin-top: 30px;
+            font-size: 1.4em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* تنسيق الملاحظات المكتوبة بخط اليد */
+        .handwritten-box {
+            background-color: var(--note-bg);
+            border: 2px dashed var(--note-border);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .handwritten-box::before {
+            content: "✍️ ملاحظة خط اليد:";
+            font-weight: bold;
+            color: #d35400;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .handwritten-text {
+            font-family: 'Cairo', cursive; /* محاولة لمحاكاة الخط اليدوي */
+            color: #d35400;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .explanation {
+            font-size: 0.95em;
+            color: #555;
+            border-top: 1px solid #fae588;
+            padding-top: 10px;
+        }
+
+        /* تنسيق الحالات الدراسية */
+        .case-study {
+            background-color: #e8f8f5;
+            border-right: 5px solid #1abc9c;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .case-title {
+            color: #16a085;
+            font-weight: bold;
+            font-size: 1.2em;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* الجداول */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.95em;
+        }
+
+        th, td {
+            border: 1px solid #bdc3c7;
+            padding: 12px 15px;
+            text-align: right;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        ul, ol {
+            padding-right: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            background-color: #ffffcc;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+نظم دعم القرار        <div class="subtitle">من إعداد: قيس الجازي | تلخيص شامل للفصلين الثاني والثالث</div>
+    </header>
+
+    <section>
+        <h2>الفصل الثاني: قواعد الإدارة وأسلوب النظم</h2>
+
+        <h3>1. أسلوب النظم (Systems Approach)</h3>
+        <p>بدلاً من العشوائية، يعتمد هذا الأسلوب على المنهج العلمي لحل المشاكل الإدارية. الفكرة الأساسية هي النظر للمؤسسة كـ "نظام متكامل" وليس أجزاء منفصلة.</p>
+        
+        <strong>القواعد الأربعة لتطبيق هذا الأسلوب:</strong>
+        <ul>
+            <li><strong>(أ) الشمولية:</strong> يجب دراسة النظام "ككل". التركيز على جزء صغير قد يضر بالمصلحة العامة للشركة.</li>
+            <li><strong>(ب) حدود الموارد:</strong> يجب إدراك أن الموارد (مال، موظفين) محدودة، وهذا يضع سقفاً لما يمكن للنظام فعله.</li>
+            <li><strong>(ج) تعدد البدائل:</strong> الإدارة الناجحة تفترض وجود عدة حلول (بدائل) للمشكلة، ودور المدير هو اختيار "الأنسب" وليس الأول.</li>
+            <li><strong>(د) المنهج العلمي:</strong> اتخاذ القرار لا يكون بالتخمين، بل بخطوات علمية (بحث، ملاحظة، تحليل).</li>
+        </ul>
+
+        <div class="handwritten-box">
+            <span class="handwritten-text">"خمس عمليات لتصميم وتقييم ودراسة النظام"</span>
+            <div class="explanation">
+                <strong>الشرح:</strong> خطوات تطبيق أسلوب النظم بالترتيب:
+                <ol>
+                    <li><strong>تمييز احتياجات المستخدمين:</strong> ماذا يريد الناس؟</li>
+                    <li><strong>تمييز الأهداف الكلية:</strong> ما هو هدف النظام الكبير؟</li>
+                    <li><strong>وصف التفاعل والموارد:</strong> كيف تعمل الأجزاء مع بعضها وماذا نملك؟</li>
+                    <li><strong>تقييم التصميمات البديلة:</strong> المقارنة بين الحلول.</li>
+                    <li><strong>إعادة التغذية الراجعة (Feedback):</strong> التحسين المستمر.</li>
+                </ol>
+            </div>
+        </div>
+
+        <h3>2. أهم قوانين الإدارة (Managerial Roles)</h3>
+        <p>الكتاب يسميها "قوانين" ولكنها عالمياً تُعرف بـ "أدوار المدير".</p>
+
+        <h4>أولاً: القوانين الشخصية (Interpersonal Roles)</h4>
+        <p>تتعلق بعلاقة المدير بالبشر داخل وخارج المنظمة.</p>
+        <div class="handwritten-box">
+            <span class="handwritten-text">"هي القواعد والقوانين الخاصة بالعلاقة بين الإدارة (المدير) والموظفين من ناحية توزيع المهام على كل موظف."</span>
+            <div class="explanation"><strong>الشرح:</strong> المدير هنا ليس مجرد "آمر"، بل هو "منظم" يوزع الشغل بشكل عادل وواضح.</div>
+        </div>
+        <p><strong>الشكل (1-2) يوضح دورين:</strong></p>
+        <ul>
+            <li><strong>القائد (Leader) ⬆️:</strong> يقود الفريق، يوجههم، ويحل الخلافات بين الأقسام.</li>
+            <li><strong>الواجهة/الرمز (Figurehead) ⬇️:</strong> يمثل "رأس" المنظمة، يوقع الأوراق الرسمية ويستقبل الزوار.</li>
+        </ul>
+
+        <h4>ثانياً: قوانين المعلومات (Informational Roles)</h4>
+        <p>تتعلق بكيفية تعامل المدير مع البيانات واستخدامها في القرار.</p>
+        <div class="handwritten-box">
+            <span class="handwritten-text">"يقوم المدير بتحديد المعلومات التي تتم مشاركتها ويتم عمل محاكاة للنظام لتوضيح مختلف البيانات التي تؤثر في عملية اتخاذ القرارات."</span>
+            <div class="explanation">
+                <strong>الشرح (مهم جداً):</strong> المدير يعمل كـ "فلتر". يستقبل معلومات خام، ثم يقوم بعمل <strong>محاكاة (Simulation)</strong> - أي تجربة السيناريوهات وتوضيحها (كما يفعل Power BI) - ليعرف النتيجة قبل اتخاذ القرار.
+            </div>
+        </div>
+
+        <h3>3. قيود النظام (System Constraints)</h3>
+        <p>لا يوجد نظام حر تماماً، هناك دائماً عوائق يجب مراعاتها عند التصميم.</p>
+        <ul>
+            <li><strong>قيود داخلية:</strong> أهمها "تأييد الإدارة العليا". إذا لم يدعم المدير النظام، سيفشل.</li>
+            <li><strong>قيود خارجية:</strong> مثل "احتياجات العملاء". إذا كان نظامك يخرج فواتير لا يفهمها العميل، يجب تغييره.</li>
+        </ul>
+
+        <table>
+            <caption>جدول (2-2): أمثلة عملية هامة على القيود</caption>
+            <thead>
+                <tr>
+                    <th>النظام الفرعي</th>
+                    <th>القيد المفروض (المشكلة)</th>
+                    <th>كيف يؤثر على التصميم</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>المخزون</strong></td>
+                    <td>كميات إعادة الطلب</td>
+                    <td>المورد قد يرفض بيع كمية صغيرة ويشترط "عربة كاملة"، فالنظام يجب أن يبرمج على طلب الكميات الكبيرة فقط.</td>
+                </tr>
+                <tr>
+                    <td><strong>حسابات الموردين</strong></td>
+                    <td>فصل المهام (الرقابة)</td>
+                    <td>الشخص الذي يكتب الشيك لا يجب أن يكون هو نفسه الذي يوقعه (لمنع السرقة).</td>
+                </tr>
+                <tr>
+                    <td><strong>المشتريات</strong></td>
+                    <td>تقييم التكلفة</td>
+                    <td>لا يجب تضييع وقت في التفاوض على مشتريات رخيصة جداً (القيمة قليلة).</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>الفصل الثالث: أنواع نظم دعم القرار</h2>
+
+        <h3>1. نظم دعم القرار الجماعية (GDSS)</h3>
+        <p><strong>المشكلة:</strong> الشركات تعتمد على اللجان، لكن جمع الأعضاء في مكان واحد صعب ومكلف، والاجتماعات قد تكون غير فعالة.</p>
+        <p><strong>الحل:</strong> استخدام برمجيات (Groupware) تسمح للمجموعة باتخاذ قرارات مشتركة إلكترونياً دون الحاجة للتواجد الجسدي.</p>
+        <div class="handwritten-box">
+            <span class="handwritten-text">"هي نظم دعم القرار التي توزع بواسطة مجموعات ويتم استخدام التقنيات لحل المشكلة مع المعلومات."</span>
+        </div>
+
+        <div class="case-study">
+            <span class="case-title">حالة دراسية (IBM): إدارة الجودة الشاملة</span>
+            <ul>
+                <li><strong>المشكلة:</strong> كان لدى IBM فجوة في تطبيق معايير الجودة بسبب اختلاف آراء المدراء حول <strong>32 شرطاً</strong> للجودة.</li>
+                <li><strong>الإجراء:</strong> استخدموا "غرفة القرار" ونظام GDSS للتصويت الإلكتروني على الأولويات.</li>
+                <li><strong>النتيجة:</strong> وصلوا إلى "إجماع" (Consensus) واتفاق كامل، ووضعوا خطة عمل لتحقيق الجودة.</li>
+            </ul>
+        </div>
+
+        <h3>2. نظم المعلومات التنفيذية (EIS)</h3>
+        <p>هي "قمة الهرم"، مصممة خصيصاً للمدراء الكبار (CEOs) الذين لا يملكون وقتاً للتفاصيل.</p>
+        <ul>
+            <li>تعرض المعلومات على شكل رسوم بيانية (Charts) لسهولة القراءة.</li>
+            <li>تركز على "السمات الحرجة" (Critical Factors) وتتبع الخلل فوراً.</li>
+        </ul>
+        <div class="handwritten-box">
+            <span class="handwritten-text">"هي النظم التي تختص بتلبية احتياجات المديرين التنفيذيين من المعلومات."</span>
+        </div>
+
+        <div class="case-study">
+            <span class="case-title">حالة دراسية (Hardee's): مطاعم هارديز</span>
+            <ul>
+                <li><strong>التحدي:</strong> مراقبة مبيعات وأداء أكثر من <strong>3000 فرع</strong> يومياً.</li>
+                <li><strong>الحل (EIS):</strong> نظام يجمع البيانات أوتوماتيكياً كل ليلة من الفروع إلى المركز الرئيسي.</li>
+                <li><strong>المستخدمون:</strong> 5 مدراء تنفيذيين فقط يستخدمون النظام.</li>
+                <li><strong>الميزة:</strong> يستخدمون "الفارة" (Mouse) فقط لاختيار القوائم (سهولة قصوى) لمراقبة الأوضاع المالية.</li>
+            </ul>
+        </div>
+
+        <h3>3. النظم الخبيرة (Expert Systems)</h3>
+        <p>نظم تحاول "تقليد" و"محاكاة" تفكير الخبير البشري. هي فرع من الذكاء الاصطناعي.</p>
+        <p><strong>الهدف:</strong> نقل الخبرة من عقل الإنسان وتخزينها في الحاسوب، لاستخدامها في حل مشاكل معقدة (مثل التشخيص الطبي، الضرائب، استكشاف المعادن).</p>
+        <div class="handwritten-box">
+            <span class="handwritten-text">مكتوب "مهم" عند: فرص النجاح وتكاليف العمل المتوقعة.</span>
+            <div class="explanation">الشركات تستخدمها لتقدير هل المشروع سينجح وكم سيكلف، بدلاً من الاعتماد على تخمين البشر فقط.</div>
+        </div>
+
+        <h3>4. الشبكات العصبية والذكاء الاصطناعي (ANN)</h3>
+        <p>الجيل الجديد من النظم. تحاكي "الخلايا العصبية" في الدماغ البشري.</p>
+        <p><strong>أهم وظيفة:</strong> التعرف على الأنماط (Pattern Recognition). تستطيع العمل حتى لو كانت البيانات ناقصة أو مشوشة (عكس الأنظمة القديمة التي تتوقف عند نقص البيانات).</p>
+
+        <table>
+            <caption>جدول (3-3): مراحل تطور أدوات دعم القرار (هام جداً)</caption>
+            <thead>
+                <tr>
+                    <th>المرحلة</th>
+                    <th>الوصف</th>
+                    <th>الأدوات والأمثلة</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>قديمة</strong></td>
+                    <td>تحسب الأرقام وتلخص.</td>
+                    <td>حاسبات، نماذج إحصائية بسيطة.</td>
+                </tr>
+                <tr>
+                    <td><strong>مبكرة</strong></td>
+                    <td>تجد، تنظم، وتعرض المعلومات.</td>
+                    <td>نظم المعلومات الإدارية (MIS)، قواعد البيانات.</td>
+                </tr>
+                <tr>
+                    <td><strong>متوسطة</strong></td>
+                    <td>تتفاعل وتجيب على "ماذا-لو".</td>
+                    <td>النظم الخبيرة (الجيل الأول)، EIS، نماذج المحاكاة.</td>
+                </tr>
+                <tr>
+                    <td><strong>حالية</strong></td>
+                    <td>تتعلم، وتدعم قرارات المجموعات.</td>
+                    <td>الشبكات العصبية، GDSS، الخوارزميات الجينية.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>5. المعالجة التحليلية الفورية (OLAP)</h3>
+        <p>جاءت لحل مشكلة البطء في الأنظمة القديمة (OLTP) عند تحليل البيانات الضخمة.</p>
+        <div class="handwritten-box">
+            <span class="handwritten-text">"هي النظم التي تستخدم عند وجود كم كبير من المعلومات لغرض تحليل المعلومات وتصفيتها للمستخدمين."</span>
+        </div>
+        <p><strong>الميزة الجوهرية:</strong> "متعددة الأبعاد" (Multidimensional). تسمح برؤية البيانات كـ "مكعب" (منتج، وقت، موقع) في نفس اللحظة للتحليل السريع.</p>
+
+        <h3>6. هرم تطور معالجة البيانات (الشكل 3-4)</h3>
+        <div class="handwritten-box">
+            <span class="handwritten-text">ملاحظة: "بس الشكل بدون تعاريف" (حفظ الترتيب)</span>
+        </div>
+        <ol reversed>
+            <li><strong>القمة (الأذكى):</strong> Intelligent OLAP</li>
+            <li>Relational OLAP</li>
+            <li>OLAP Systems (نظم المعالجة التحليلية)</li>
+            <li>Transaction Processing (نظم المعالجة اليومية)</li>
+            <li><strong>القاعدة:</strong> Data Processing (معالجة البيانات الخام)</li>
+        </ol>
+
+        <h3>7. مستودعات البيانات والتنقيب (Data Warehousing & Mining)</h3>
+        <ul>
+            <li><strong>المستودعات:</strong> بنية تحتية ضخمة لتخزين وتنظيف البيانات من كل أقسام الشركة (مثل مخزن كبير للمعلومات).</li>
+            <li><strong>التنقيب (Mining):</strong> عملية البحث داخل هذا المستودع لاكتشاف "أنماط" (Patterns) وعلاقات خفية لم يكن المدير يعرفها.</li>
+        </ul>
+        <div class="handwritten-box">
+            <span class="handwritten-text">"هي نظم التي تستخدم المعلومات المتوفرة على شبكة الانترنت والنصوص."</span>
+        </div>
+        <p><strong>دورة حياة البيانات (الشكل):</strong> تبدأ بجمع البيانات ⬅️ تخزينها في المستودعات ⬅️ تمثيلها واستغلالها (Exploitation).</p>
+
+        <h3>8. تصنيف النظم حسب المستويات (قائمة مهمة)</h3>
+        <ul>
+            <li><strong>نظم أتمتة المكاتب (OAS):</strong> للموظفين والعمل الروتيني (مثل Word, Email).</li>
+            <li><strong>نظم المعلومات الإدارية (MIS):</strong> للإدارة الوسطى. توفر تقارير دورية وتساعد في القرارات شبه المهيكلة.
+                <br><em>أمثلة تابعة لها:</em> إدارة سلسلة التوريد، التمويل الإلكتروني، تخطيط المواد (MRP).</li>
+            <li><strong>نظم المعلومات التنفيذية (EIS):</strong> للإدارة العليا. تركز على التهديدات الخارجية والخطط الاستراتيجية، وترتبط بالذكاء الاصطناعي.</li>
+        </ul>
+
+        <h3>9. نظام دعم قرار الزبائن (Customer DSS)</h3>
+        <p>هذا النظام موجه للزبون وليس للمدير.</p>
+        <p><strong>آلية العمل:</strong> الشركة تفتح جزءاً من قاعدة بياناتها للجمهور عبر الويب، ليقوم الزبون بالبحث والمقارنة بين المنتجات لاتخاذ قرار الشراء.</p>
+        <div class="handwritten-box">
+            <span class="handwritten-text">"هي النظم التي تقوم بدعم القرارات الموجهة للزبائن من حيث احتياجاتهم ومعلوماتهم، ومن هم الزبائن الحاليين والمستقبليين."</span>
+        </div>
+
+    </section>
+
+    <footer style="margin-top: 50px; text-align: center; color: #7f8c8d; border-top: 1px solid #ddd; padding-top: 20px;">
+        <p>تم الإعداد بواسطة قيس الجازي &copy; 2026</p>
+    </footer>
+</div>
+
+</body>
+</html>
